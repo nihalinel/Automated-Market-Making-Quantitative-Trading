@@ -1,22 +1,21 @@
-# Automated Market Making & Quantitative Trading Simulation
-This project involves developing an automated market-making algorithm within a quantitative trading simulation. The goal is to implement a market maker that dynamically adjusts bid-offer spreads based on market conditions, while optimizing risk management strategies. The simulation consists of multiple challenges designed to introduce and refine key concepts in market microstructure, algorithmic trading, and object-oriented programming (OOP) in Python.
+# Automated Market Making & Quantitative Trading
 
-Challenge 1: Non-Skewed Price Making <br />
-Implement an automated market-making algorithm that provides a 2% non-skewed bid-offer spread around a reference price.<br />
-Process price requests from a simulated hedge fund (HF).<br />
-Log quoted trades and completed trades using OOP principles.<br />
-Visualize bid, offer, and reference price data using Matplotlib.
+## Overview
+This project implements an **automated market-making algorithm** for a quantitative trading simulation. The goal is to dynamically adjust bid-offer spreads and optimize risk management strategies using Python.
 
-Challenge 2: Skewed Price Making with Risk Management <br />
-Extend the market-making algorithm to dynamically skew bid-offer spreads based on position risk:<br />
-Neutral: 2% spread (non-skewed).<br />
-Axed Long: 1% bid, 7% offer (encouraging selling).<br />
-Axed Short: 7% bid, 1% offer (encouraging buying).<br />
-Implement functions to handle hedge fund responses, logging trades into a Market Maker object.<br />
-Generate dynamic price visualizations for all tickers traded.
+## Challenges & Solutions
+- **Challenge 1: Non-Skewed Market Making**
+  - Implemented a **2% non-skewed bid-offer spread** around the reference price.  
+  - Processed real-time **price requests** and logged completed trades.  
+  - Visualized bid, offer, and reference prices using **Matplotlib**.
 
-Technologies Used: <br />
-Python (Object-Oriented Programming, Data Processing) <br />
-Matplotlib (Data Visualization)<br />
-Pandas (Data Manipulation)<br />
-Simulated Market Data API (AmplifyQuantTrading package)
+- **Challenge 2: Skewed Market Making with Risk Management** 
+  - Developed a **dynamic pricing algorithm** that **skews bid-ask spreads** based on risk exposure.  
+  - Implemented **position-based adjustments** (Axed Long, Axed Short).  
+  - Plotted price data for all tickers traded during the simulation.
+
+## Technologies Used
+- 🐍 **Python** (OOP, Data Processing)
+- 📊 **Matplotlib** (Data Visualization)
+- 📈 **Pandas** (Data Manipulation)
+- ⚡ **AmplifyQuantTrading API** (Simulated Market Data)
